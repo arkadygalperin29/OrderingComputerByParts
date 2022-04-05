@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_and_secondname">Name and secondname</string>
+    <string name="periphery">Periphery</string>
+    <string name="operation_system">Operation System</string>
+    <string name="phone_number">Phone number</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="GraphicCards">GraphicCard</string>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">RecyclerHomework</string>
+    <string name="select_the_list_of_graphic_cards">Select the list of graphic cards</string>
+    <string name="card_s_model">Card\'s model</string>
+    <string name="graphic_cards">Graphic Cards</string>
+    <string name="graphiccard">Card\'s name</string>
+    <string name="graphic_cardsss">Graphic Cards</string>
+    <string name="Brand_name">BrandName</string>
+    <string name="select_graphicscard">Select graphicscard</string>
+    <string name="move_to_monitor_list">Move to monitor list</string>
+    <string name="show_monitor_list">Show monitor list</string>
+    <string name="ContinueProcess">Continue</string>
+    <string name="select_operation_system">Select operation system</string>
+    <string name="move_to_graphiccards_list">Move to graphiccard list</string>
+    <string name="confirm_choice">Confirm choice</string>
+    <string name="name_and_secondname">Name and secondname</string>
+    <string name="monitor">Monitor</string>
+    <string name="periphery">Periphery</string>
+    <string name="operation_system">Operation System</string>
+    <string name="phone_number">Phone number</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="GraphicCards">GraphicCard</string>
+    <string name="registration">Registration</string>
+    <string name="e_mail">E-mail</string>
+    <string name="second_name">Second name</string>
+    <string name="first_name">First Name</string>
+    <string name="next">Next</string>
+</resources>
