@@ -53,6 +53,7 @@ class OperationSystemFragment : Fragment(R.layout.fragment_operationsystem) {
                     )
                 }
             }
+
         }
     }
 
@@ -63,6 +64,7 @@ class OperationSystemFragment : Fragment(R.layout.fragment_operationsystem) {
             DialogFragment.newInstance(getItem)
                 .show(requireActivity().supportFragmentManager, "Show Fragment Manager")
         }
+
     }
 
     private fun checkEmptyField(): Boolean {
@@ -70,8 +72,8 @@ class OperationSystemFragment : Fragment(R.layout.fragment_operationsystem) {
     }
 
     private val getItem = object : ItemClickListener {
-        override fun itemClickListener(clickItem: CommonItem) {
-            showOperationSystemList.setText(clickItem.item) //как это делать в случае с брендом
+        override fun itemClickListener(item: CommonItem) {
+            showOperationSystemList.setText(item.item) //как это делать в случае с брендом
         }
     }
 }

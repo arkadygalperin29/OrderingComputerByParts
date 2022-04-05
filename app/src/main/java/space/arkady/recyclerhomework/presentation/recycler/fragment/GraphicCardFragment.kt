@@ -42,12 +42,12 @@ class GraphicCardFragment : Fragment(R.layout.fragment_graphiccard) {
                 }
                 showgraphicCardList.text.contains("NVIDIA") -> {
                     BrandGraphicCard.NVIDIA
-                    }
-
-                    showgraphicCardList.text.contains("AMD") -> {
-                      BrandGraphicCard.AMD
-                    }
                 }
+
+                showgraphicCardList.text.contains("AMD") -> {
+                    BrandGraphicCard.AMD
+                }
+            }
             sharedViewModel.graphicCard.observe(viewLifecycleOwner) {
                 requireActivity().apply {
                     openFragment(
@@ -67,8 +67,6 @@ class GraphicCardFragment : Fragment(R.layout.fragment_graphiccard) {
             DialogFragment.newInstance(getItem)
                 .show(requireActivity().supportFragmentManager, DialogFragment.TAG)
         }
-
-
     }
 
     private fun checkEmptyField(): Boolean {
