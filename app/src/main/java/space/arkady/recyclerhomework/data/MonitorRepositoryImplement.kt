@@ -1,6 +1,6 @@
 package space.arkady.recyclerhomework.data
 
-import space.arkady.recyclerhomework.domain.domain.MonitorRepository
+import space.arkady.recyclerhomework.domain.domain.repositories.MonitorRepository
 import space.arkady.recyclerhomework.domain.domain.models.BrandMonitor
 import space.arkady.recyclerhomework.domain.domain.models.Monitor
 

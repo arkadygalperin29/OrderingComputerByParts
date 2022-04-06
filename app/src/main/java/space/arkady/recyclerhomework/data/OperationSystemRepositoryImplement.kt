@@ -1,6 +1,6 @@
 package space.arkady.recyclerhomework.data
 
-import space.arkady.recyclerhomework.domain.domain.OperationSystemRepository
+import space.arkady.recyclerhomework.domain.domain.repositories.OperationSystemRepository
 import space.arkady.recyclerhomework.domain.domain.models.BrandOperationSystem
 import space.arkady.recyclerhomework.domain.domain.models.OperationSystem
 

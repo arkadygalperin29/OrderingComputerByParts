@@ -1,5 +1,6 @@
 package space.arkady.recyclerhomework.presentation.recycler.extensionFragment
 
+import android.app.Activity
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -11,4 +12,8 @@ fun FragmentActivity.openFragment(containerId: Int, fragment: Fragment, tag: Str
 
 fun Fragment.showToast(message: String) {
     Toast.makeText(requireActivity(), message, Toast.LENGTH_LONG).show()
+}
+
+fun Activity.showToast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_LONG).show()
 }

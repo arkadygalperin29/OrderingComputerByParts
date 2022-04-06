@@ -1,7 +1,7 @@
 package space.arkady.recyclerhomework.domain.domain.models
 
 data class Periphery(
-    val mouse: String = "",
-    val webcam: String = "",
-    val keyboard: String = ""
+    var mouse: String = "",
+    var webcam: String = "",
+    var keyboard: String = ""
 )

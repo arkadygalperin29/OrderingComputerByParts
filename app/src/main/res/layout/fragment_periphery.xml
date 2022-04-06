@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Webcam"
+            android:text="@string/webcam"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="65dp" />
 
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Mouse"
+            android:text="@string/mouse"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="113dp" />
 
@@ -37,14 +37,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Keyboard"
+            android:text="@string/keyboard"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="161dp" />
 
     </RadioGroup>
 
     <Button
-        android:id="@+id/buttonNext"
+        android:id="@+id/buttonPeriphery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next"

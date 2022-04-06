@@ -25,4 +25,7 @@
     <string name="second_name">Second name</string>
     <string name="first_name">First Name</string>
     <string name="next">Next</string>
+    <string name="webcam">Webcam</string>
+    <string name="mouse">Mouse</string>
+    <string name="keyboard">Keyboard</string>
 </resources>

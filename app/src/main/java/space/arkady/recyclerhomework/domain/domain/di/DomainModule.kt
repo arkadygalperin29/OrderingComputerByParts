@@ -5,21 +5,23 @@ import space.arkady.recyclerhomework.data.GraphicCardRepositoryImplement
 import space.arkady.recyclerhomework.data.MonitorRepositoryImplement
 import space.arkady.recyclerhomework.data.OperationSystemRepositoryImplement
 import space.arkady.recyclerhomework.domain.domain.*
-import space.arkady.recyclerhomework.domain.domain.interactor.CommonInteractor
-import space.arkady.recyclerhomework.domain.domain.models.CommonItem
+import space.arkady.recyclerhomework.domain.domain.repositories.GraphicCardRepository
+import space.arkady.recyclerhomework.domain.domain.repositories.MonitorRepository
+import space.arkady.recyclerhomework.domain.domain.repositories.OperationSystemRepository
 
 val domainModule = module {
-/*    val q1 = qualifier("OperationSystem")
-    val q2 = qualifier("Monitor")
-    val q3 = qualifier("GraphicCard")*/
 
-    factory<CommonInteractor<CommonItem>>() {
+    single<OperationSystemInteractor> {
         OperationSystemInteractorImplement(
             get()
         )
+    }
+    single<MonitorInteractor> {
         MonitorInteractorImplement(
             get()
         )
+    }
+    single<GraphicCardInteractor> {
         GraphicCardInteractorImplement(
             get()
         )

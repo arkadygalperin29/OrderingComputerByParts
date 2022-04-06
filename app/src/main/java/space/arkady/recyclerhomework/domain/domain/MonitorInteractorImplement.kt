@@ -1,13 +1,16 @@
 package space.arkady.recyclerhomework.domain.domain
 
-import space.arkady.recyclerhomework.domain.domain.interactor.CommonInteractor
-import space.arkady.recyclerhomework.domain.domain.models.CommonItem
+import space.arkady.recyclerhomework.domain.domain.mapper.toDomainMonitor
+import space.arkady.recyclerhomework.domain.domain.models.DomainMonitor
+import space.arkady.recyclerhomework.domain.domain.repositories.MonitorRepository
 
 class MonitorInteractorImplement(
     private val repository: MonitorRepository
-) : CommonInteractor<CommonItem> {
-    override fun getItem(): List<CommonItem> {
-        return repository.getMonitorList()
-            .map { item -> CommonItem("${item.brand}${item.model}${item.inches}${item.resolution}") }
+) : MonitorInteractor {
+
+    override fun getMonitor(): List<DomainMonitor> {
+        return repository.getMonitorList().map { monitor ->
+            monitor.toDomainMonitor()
+        }
     }
 }

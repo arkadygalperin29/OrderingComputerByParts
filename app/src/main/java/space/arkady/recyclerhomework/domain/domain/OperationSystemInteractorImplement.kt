@@ -1,12 +1,16 @@
 package space.arkady.recyclerhomework.domain.domain
 
-import space.arkady.recyclerhomework.domain.domain.interactor.CommonInteractor
-import space.arkady.recyclerhomework.domain.domain.models.CommonItem
+import space.arkady.recyclerhomework.domain.domain.mapper.toDomainOperationSystem
+import space.arkady.recyclerhomework.domain.domain.models.DomainOperationSystem
+import space.arkady.recyclerhomework.domain.domain.repositories.OperationSystemRepository
 
 class OperationSystemInteractorImplement(private val repository: OperationSystemRepository):
-    CommonInteractor<CommonItem> {
-    override fun getItem(): List<CommonItem> {
-        return repository.getOperationSystemList().map { item ->
-            CommonItem("${item.name} ${item.version}") }
+    OperationSystemInteractor {
+
+    override fun getOperationSystem(): List<DomainOperationSystem> {
+        return repository.getOperationSystemList().map { operationSystem ->
+            operationSystem.toDomainOperationSystem()
+        }
     }
+
 }

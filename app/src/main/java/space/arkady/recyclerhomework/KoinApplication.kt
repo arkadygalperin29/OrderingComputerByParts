@@ -5,7 +5,6 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import space.arkady.recyclerhomework.domain.domain.di.domainModule
 import space.arkady.recyclerhomework.presentation.recycler.di.viewModelModule
-import space.arkady.recyclerhomework.presentation.recycler.di.viewModelModuleData
 
 class KoinApplication : Application() {
 
@@ -18,7 +17,6 @@ class KoinApplication : Application() {
                 listOf(
                     domainModule,
                     viewModelModule,
-                    viewModelModuleData
                 )
             )
         }

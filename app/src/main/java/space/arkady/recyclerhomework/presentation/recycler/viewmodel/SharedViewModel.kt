@@ -15,26 +15,33 @@ class SharedViewModel : ViewModel() {
     }
 
 
-    val operationSystem: LiveData<BrandOperationSystem> get() = _operationSystem
-    private val _operationSystem = MutableLiveData<BrandOperationSystem>()
+    val domainOperationSystem: LiveData<DomainOperationSystem> get() = _domainOperationSystem
+    private val _domainOperationSystem = MutableLiveData<DomainOperationSystem>()
 
-    fun setOperationSystem(operationSystem: BrandOperationSystem) {
-        _operationSystem.value = operationSystem
+    fun setOperationSystem(domainOperationSystem: DomainOperationSystem) {
+        _domainOperationSystem.value = domainOperationSystem
     }
 
 
-    val graphicCard: LiveData<BrandGraphicCard> get() = _graphicCard
-    private val _graphicCard = MutableLiveData<BrandGraphicCard>()
+    val domainGraphicCard: LiveData<DomainGraphicCard> get() = _domainGraphicCard
+    private val _domainGraphicCard = MutableLiveData<DomainGraphicCard>()
 
-    fun setGraphicCard(graphicCard: BrandGraphicCard) {
-        _graphicCard.value = graphicCard
+    fun setGraphicCard(domainGraphicCard: DomainGraphicCard) {
+        _domainGraphicCard.value = domainGraphicCard
     }
 
 
-    val monitor: LiveData<BrandMonitor> get() = _monitor
-    private val _monitor = MutableLiveData<BrandMonitor>()
+    val domainMonitor: LiveData<DomainMonitor> get() = _domainMonitor
+    private val _domainMonitor = MutableLiveData<DomainMonitor>()
 
-    fun setMonitor(monitor: BrandMonitor) {
-        _monitor.value = monitor
+    fun setDomainMonitor(domainMonitor: DomainMonitor) {
+         _domainMonitor.value = domainMonitor
+    }
+
+    val peripheries: LiveData<Periphery> get() = _peripheries
+    private val _peripheries = MutableLiveData<Periphery>()
+
+    fun setPeriphery(periphery: Periphery) {
+        _peripheries.value = periphery
     }
 }
