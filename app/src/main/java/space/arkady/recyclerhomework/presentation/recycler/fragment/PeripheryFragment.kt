@@ -25,9 +25,9 @@ class PeripheryFragment : Fragment(R.layout.fragment_periphery) {
             sharedViewModel.setPeriphery(createAdditional())
             requireActivity().apply {
                 openFragment(
-                    R.id.container,
-                    OrderFragment.newInstance(),
-                    OrderFragment.TAG
+                    fragment = OrderFragment.newInstance(),
+                    tag = OrderFragment.TAG,
+                    R.id.container
                 )
             }
         }

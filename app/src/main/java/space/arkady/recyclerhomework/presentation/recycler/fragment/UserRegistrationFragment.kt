@@ -31,14 +31,14 @@ class UserRegistrationFragment : Fragment(R.layout.fragment_user_registration) {
                 inputPhone.text.toString().isEmpty() ||
                 inputEmail.text.toString().isEmpty()
             ) {
-                requireActivity().showToast("Error")
+                requireActivity().showToast("Fill the fields")
             } else {
                 sharedViewModel.setUser(createUser())
                 requireActivity().apply {
                     openFragment(
-                        containerId = R.id.container,
                         fragment = OperationSystemFragment.newInstance(),
-                        OperationSystemFragment.TAG,
+                        tag = OperationSystemFragment.TAG,
+                        containerId = R.id.container,
                     )
                 }
             }

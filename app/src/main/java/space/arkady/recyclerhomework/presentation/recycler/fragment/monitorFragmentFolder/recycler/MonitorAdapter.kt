@@ -25,8 +25,6 @@ class MonitorAdapter(private val onMonitorClickListener: OnMonitorClickListener)
         domainMonitors = data
         notifyDataSetChanged()
     }
-
-
 }
 
 

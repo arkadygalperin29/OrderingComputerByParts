@@ -38,7 +38,7 @@ class MonitorFragment() : Fragment(R.layout.fragment_monitor) {
         showMonitorList.setOnClickListener {
             onEditTextClick()
         }
-        button_monitorToPeriphery.setOnClickListener {
+        buttonMonitor.setOnClickListener {
             onButtonMonitorClick()
         }
     }
@@ -73,9 +73,9 @@ class MonitorFragment() : Fragment(R.layout.fragment_monitor) {
             )
             requireActivity().apply {
                 openFragment(
-                    R.id.container,
                     PeripheryFragment.newInstance(),
                     PeripheryFragment.TAG,
+                    R.id.container
                 )
             }
         }

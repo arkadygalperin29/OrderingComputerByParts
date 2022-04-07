@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         openFragment(
-            R.id.container,
             UserRegistrationFragment.newInstance(),
-            UserRegistrationFragment.TAG
+            UserRegistrationFragment.TAG,
+            R.id.container,
         )
     }
 }

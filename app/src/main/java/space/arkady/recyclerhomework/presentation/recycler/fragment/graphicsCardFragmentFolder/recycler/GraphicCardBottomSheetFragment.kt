@@ -51,6 +51,5 @@ class GraphicCardBottomSheetFragment(graphicCardResultListener: GraphicCardResul
         sharedViewModel.graphicCardLiveData.observe(viewLifecycleOwner) { graphicCard ->
             adapter.submitCardList(graphicCard)
         }
-
     }
 }

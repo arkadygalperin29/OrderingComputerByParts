@@ -9,11 +9,12 @@ class OperationSystemAdapter(private val onOperationSystemClickListener: OnOpera
     RecyclerView.Adapter<OperationSystemViewHolder>() {
 
     private var domainOperationSystems: List<DomainOperationSystem> = emptyList()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OperationSystemViewHolder {
         return OperationSystemViewHolder.newInstance(parent, onOperationSystemClickListener)
     }
-    override fun onBindViewHolder(monitorHolder: OperationSystemViewHolder, position: Int) {
-       monitorHolder.bindItem(domainOperationSystems[position])
+    override fun onBindViewHolder(operationSystemHolder: OperationSystemViewHolder, position: Int) {
+       operationSystemHolder.bindItem(domainOperationSystems[position])
     }
 
 
@@ -25,8 +26,6 @@ class OperationSystemAdapter(private val onOperationSystemClickListener: OnOpera
         domainOperationSystems = data
         notifyDataSetChanged()
     }
-
-
 }
 
 

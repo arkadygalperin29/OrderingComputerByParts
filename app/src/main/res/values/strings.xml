@@ -28,4 +28,6 @@
     <string name="webcam">Webcam</string>
     <string name="mouse">Mouse</string>
     <string name="keyboard">Keyboard</string>
+    <string name="select_graphiccard">Select GraphicCard</string>
+    <string name="select_monitor">Select Monitor</string>
 </resources>

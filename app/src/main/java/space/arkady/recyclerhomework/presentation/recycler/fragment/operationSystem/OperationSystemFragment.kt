@@ -45,18 +45,17 @@ class OperationSystemFragment() : Fragment(R.layout.fragment_operationsystem) {
     }
 
     private fun onButtonMonitorClick() {
-        when {
-            showOperationSystemList.text.isEmpty() -> {
-                showToast("Select a monitor")
-            }
-            showOperationSystemList.text.contains("WINDOWS") -> {
-                BrandOperationSystem.WINDOWS
-            }
-            showOperationSystemList.text.contains("MACOS") -> {
-                BrandOperationSystem.MACOS
-            }
-        }
-
+when {
+    showOperationSystemList.text.isEmpty() -> {
+        showToast("Select a monitor")
+    }
+    showOperationSystemList.text.contains("WINDOWS") -> {
+        BrandOperationSystem.WINDOWS
+    }
+    showOperationSystemList.text.contains("MACOS") -> {
+        BrandOperationSystem.MACOS
+    }
+}
         if (showOperationSystemList.text.toString().isEmpty()) {
             requireActivity().showToast("Error")
         } else {
@@ -65,9 +64,9 @@ class OperationSystemFragment() : Fragment(R.layout.fragment_operationsystem) {
             )
             requireActivity().apply {
                 openFragment(
-                    R.id.container,
-                    GraphicCardFragment.newInstance(),
-                    GraphicCardFragment.TAG,
+                   fragment = GraphicCardFragment.newInstance(),
+                    tag = GraphicCardFragment.TAG,
+                    containerId = R.id.container
                 )
             }
         }
@@ -82,3 +81,5 @@ class OperationSystemFragment() : Fragment(R.layout.fragment_operationsystem) {
             )
     }
 }
+
+
