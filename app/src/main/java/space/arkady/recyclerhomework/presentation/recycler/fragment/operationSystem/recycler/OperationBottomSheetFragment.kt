@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import kotlinx.android.synthetic.main.fragment_dialog.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 import space.arkady.recyclerhomework.R
 import space.arkady.recyclerhomework.domain.domain.models.DomainOperationSystem
@@ -46,6 +47,8 @@ class OperationBottomSheetFragment(operationSystemResultListener: OperationSyste
 
     override fun onStart() {
         super.onStart()
+
+        recycler.adapter = adapter
 
         sharedViewModel.operationSystemLiveData.observe(viewLifecycleOwner) { operationSystem ->
             adapter.submitCardList(operationSystem)
