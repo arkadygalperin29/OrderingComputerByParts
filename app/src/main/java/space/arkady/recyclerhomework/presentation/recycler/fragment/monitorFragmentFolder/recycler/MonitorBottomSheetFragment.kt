@@ -21,7 +21,7 @@ class MonitorBottomSheetFragment(monitorResultListener: MonitorResultListener) :
     private val sharedViewModel: MonitorViewModel by sharedViewModel()
 
     companion object {
-        const val TAG = "Monitor"
+        const val TAG = "MonitorBottomSheetFragment"
         fun newInstance(monitorResultListener: MonitorResultListener) =
             MonitorBottomSheetFragment(monitorResultListener)
     }
@@ -53,7 +53,6 @@ class MonitorBottomSheetFragment(monitorResultListener: MonitorResultListener) :
         sharedViewModel.monitorLiveData.observe(viewLifecycleOwner) { monitor ->
             adapter.submitCardList(monitor)
         }
-
     }
 }
 

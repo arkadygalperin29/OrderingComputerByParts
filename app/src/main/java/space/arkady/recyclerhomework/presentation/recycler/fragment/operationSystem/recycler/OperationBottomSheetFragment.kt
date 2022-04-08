@@ -53,7 +53,6 @@ class OperationBottomSheetFragment(operationSystemResultListener: OperationSyste
         sharedViewModel.operationSystemLiveData.observe(viewLifecycleOwner) { operationSystem ->
             adapter.submitCardList(operationSystem)
         }
-
     }
 }
 

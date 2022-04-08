@@ -40,7 +40,7 @@ class MonitorViewHolder(
                 domainMonitor.brand.contains("SAMSUNG") -> itemView.brandLogo.setImageResource(R.drawable.samsung_logo)
             }
         }
-        root.setOnClickListener {
+        itemView.root.setOnClickListener {
             getMonitor.onMonitorClickListener(domainMonitor)
         }
     }

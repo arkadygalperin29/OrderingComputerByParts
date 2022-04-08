@@ -9,6 +9,7 @@ class MonitorAdapter(private val onMonitorClickListener: OnMonitorClickListener)
     RecyclerView.Adapter<MonitorViewHolder>() {
 
     private var domainMonitors: List<DomainMonitor> = emptyList()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MonitorViewHolder {
         return MonitorViewHolder.newInstance(parent, onMonitorClickListener)
     }

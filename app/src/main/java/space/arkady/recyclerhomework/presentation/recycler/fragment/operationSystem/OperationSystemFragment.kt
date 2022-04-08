@@ -40,14 +40,14 @@ class OperationSystemFragment() : Fragment(R.layout.fragment_operationsystem) {
             onEditTextClick()
         }
         operationSystemButton.setOnClickListener {
-            onButtonMonitorClick()
+            onButtonOperationSystemClick()
         }
     }
 
-    private fun onButtonMonitorClick() {
+    private fun onButtonOperationSystemClick() {
 when {
     showOperationSystemList.text.isEmpty() -> {
-        showToast("Select a monitor")
+        showToast("Select an Operation System")
     }
     showOperationSystemList.text.contains("WINDOWS") -> {
         BrandOperationSystem.WINDOWS

@@ -14,18 +14,22 @@ import space.arkady.recyclerhomework.presentation.recycler.viewmodel.SharedViewM
 
 class GraphicCardFragment : Fragment(R.layout.fragment_graphiccard) {
     companion object {
-        const val TAG = "Graphic Card"
+        const val TAG = "GraphicCard"
         fun newInstance() = GraphicCardFragment()
     }
+
+    private val sharedViewModel: SharedViewModel by sharedViewModel()
+
 
     private val graphicCardResult by lazy {
         object : GraphicCardResultListener {
             override fun onGraphicCardResult(graphicCardItem: DomainGraphicCard) {
+                showgraphicCardList.setText(graphicCardItem.brand)
             }
         }
     }
 
-    private val sharedViewModel: SharedViewModel by sharedViewModel()
+
 
     override fun onStart() {
         super.onStart()

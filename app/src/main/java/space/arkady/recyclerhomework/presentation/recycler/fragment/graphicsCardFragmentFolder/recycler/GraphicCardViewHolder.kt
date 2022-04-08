@@ -36,7 +36,7 @@ class GraphicCardViewHolder(
                 domainGraphicCard.brand.contains("AMD") -> itemView.brandLogo.setImageResource(R.drawable.amd_logo)
             }
         }
-        root.setOnClickListener {
+        itemView.root.setOnClickListener {
             getItem.onGraphicCardClickListener(domainGraphicCard)
         }
     }
