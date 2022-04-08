@@ -5,53 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RadioGroup
-        android:id="@+id/computerAccesories"
+
+    <CheckBox
+        android:id="@+id/webcamButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:text="@string/webcam"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/webcamButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/webcam"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="65dp" />
+    <CheckBox
+        android:id="@+id/mouseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/mouse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webcamButton" />
 
-        <RadioButton
-            android:id="@+id/mouseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/mouse"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="113dp" />
+    <CheckBox
+        android:id="@+id/keyboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/keyboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mouseButton" />
 
-        <RadioButton
-            android:id="@+id/keyboardButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/keyboard"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="161dp" />
-
-    </RadioGroup>
 
     <Button
         android:id="@+id/buttonPeriphery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="320dp"
+        android:backgroundTint="@color/grey"
         android:text="Next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/computerAccesories" />
+        app:layout_constraintTop_toBottomOf="@+id/keyboardButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
