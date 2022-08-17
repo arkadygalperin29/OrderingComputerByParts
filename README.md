@@ -1,4 +1,4 @@
-# KoinOrderApp
+# OrderingComputerByParts
 
 A very simple example of the pc-constructor(ordering pc the same way as if it was a pizza) when using Koin.
 
