@@ -11,7 +11,7 @@
         android:name=".KoinApplication"
         android:theme="@style/Theme.RecyclerHomework">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

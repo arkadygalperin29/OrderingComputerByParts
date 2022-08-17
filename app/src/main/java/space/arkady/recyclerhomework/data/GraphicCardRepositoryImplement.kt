@@ -1,8 +1,8 @@
 package space.arkady.recyclerhomework.data
 
-import space.arkady.recyclerhomework.domain.domain.repositories.GraphicCardRepository
-import space.arkady.recyclerhomework.domain.domain.models.BrandGraphicCard
-import space.arkady.recyclerhomework.domain.domain.models.GraphicCard
+import space.arkady.recyclerhomework.domain.repository.GraphicCardRepository
+import space.arkady.recyclerhomework.domain.models.BrandGraphicCard
+import space.arkady.recyclerhomework.domain.models.GraphicCard
 
 object GraphicCardRepositoryImplement : GraphicCardRepository {
 

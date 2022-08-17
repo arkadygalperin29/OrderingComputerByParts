@@ -3,8 +3,8 @@ package space.arkady.recyclerhomework
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
-import space.arkady.recyclerhomework.domain.domain.di.domainModule
-import space.arkady.recyclerhomework.presentation.recycler.di.viewModelModule
+import space.arkady.recyclerhomework.domain.di.domainModule
+import space.arkady.recyclerhomework.presentation.di.viewModelModule
 
 class KoinApplication : Application() {
 
